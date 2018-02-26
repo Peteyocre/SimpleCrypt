@@ -38,10 +38,8 @@ public class ROT13  {
     }
 
     public static String rotate(String s, Character c) {
-
-        int startingIndex = 0;
         StringBuilder textSB = new StringBuilder();
-        startingIndex = s.indexOf(c);
+        int startingIndex = s.indexOf(c);
 
         for (int i = startingIndex; i < s.length(); i++) {
             textSB.append(s.charAt(i));
